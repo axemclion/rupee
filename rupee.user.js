@@ -17,7 +17,8 @@
         style.appendChild(rules);
     head.appendChild(style);
     
-    var val = document.body.innerHTML.replace(/ Rs./g, "<span style = 'font-family:rupee'> r</span>");
-    val = val.replace(/ INR /g, "<span style = 'font-family:rupee'> R </span>")
+    var rupeeSymbol = "<span style = 'font-family:rupee'> R</span>"
+    var val = document.body.innerHTML.replace(/Rs./g, rupeeSymbol);
+    val = val.replace(/ INR/g, rupeeSymbol);
     document.body.innerHTML = val;
 })();

@@ -1,1 +1,136 @@
-My GitHub Page
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="rupee.css"/>
+        <style>
+            html {
+                background-color: #555555;
+            }
+            
+            body {
+                font-family: "Helvetica,Arial,FreeSans";
+                font-size: 14px;
+                width: 800px;
+                background-color: #FFFFFF;
+                margin: 0 auto 0 auto;
+                height: 100%;
+            }
+            
+            h1 {
+                font-size: 2.8em;
+                color: #B98734;
+                text-align: center;
+                margin: 0px;
+            }
+            
+            h2 {
+                font-weight: normal;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                font-style: italic;
+            }
+            
+            h3 {
+                font-weight: normal;
+                font-size: 1.3em;
+                color: #B98734;
+                font-weight: bold;
+            }
+            
+            code {
+                background-color: black;
+                color: #FFFFFF;
+                display: block;
+                padding: 0.3em 1em 0.3em 1em;
+                line-height: 2em;
+                margin: 0.4em 1em 0.4em 1em;
+            }
+            
+            #content {
+                padding: 1em;
+            }
+            
+            p {
+                line-height: 1.3em;
+            }
+            
+            li {
+                margin-bottom: 3em;
+                border-bottom: dotted gray 1px;
+            }
+            
+            em {
+                font-weight: bold;
+            }
+            
+            textarea {
+                width: 100%;
+            }
+            
+            a {
+                color: #B98734;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "content">
+            <h1>Indian Rupee <span style ="font-family:rupee">R</span></h1>
+            <h2>The new symbol</h2>
+            <hr/>
+            <div id = "page">
+                <ol>
+                    <li>
+                        <h3>Using the symbol on your web pages</h3>
+                        <p>
+                            To use the symbol on your web pages, include the following stylesheet
+                            <code>
+                                &lt;link rel="stylesheet" href="<a href= "http://axemclion.github.com/rupee/rupee.css" style ="text-decoration : none;color : #ABCDEF">http://axemclion.github.com/rupee/rupee.css</a>"/&gt;
+                            </code>
+                            Then, add the following code at places where you would like the <span style ="font-family:rupee">R</span>
+                            to show up.
+                            <code>
+                                &lt;span style ="font-family:rupee"&gt;R&lt;/span&gt;
+                            </code>
+                            For example, to say that something costs <span style ="font-family:rupee">R</span>
+                            100,  write
+                            <code>
+                                <span style ="color:#ABCDEF">&lt;div&gt;</span>something costs <span style ="color:#ABCDEF">&lt;span style ="font-family:rupee"&gt;</span>R<span style ="color:#ABCDEF">&lt;/span&gt; </span>100 <span style ="color:#ABCDEF">&lt;div&gt;</span>
+                            </code>
+                            This page uses the rupee symbol font. You can select it like normal text; it is not an image. 
+                            More information on the details at <a href = "http://blog.nparashuram.com/search/labels/rupeesymbol">http://blog.nparashuram.com/search/labels/rupeesymbol</a>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>See how current pages look with the new symbol</h3>
+                        <p>
+                            To replace all <b>INR</b>
+                            and <span>R</span>s. 
+                            to <span style ="font-family:rupee">R</span>
+                            , copy the following text and paste it in the address bar of your browser.
+                            <code>
+                                <textarea>
+                                    javascript:document.getElementsByTagName('head')[0].appendChild(document.createElement('script')).setAttribute('src','http://axemclion.github.com/rupee/rupee.user.js');
+                                </textarea>
+                            </code>
+                            You can also drag and drop the <a href = "javascript:document.getElementsByTagName('head')[0].appendChild(document.createElement('script')).setAttribute('src','http://axemclion.github.com/rupee/rupee.user.js');" style ="background-color : #B98734; color : black; text-decoration : none; line-height : 1.3em">RupeeSymbol</a>
+                            bookmarklet to your bookmarks/favourites bar and click on it to activate it when viweing a page 
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Firefox Greasemonkey script</h3>
+                        <p>
+                            Firefox users can install the greasemonkey script at 
+                            <code>
+                                <a href = "http://axemclion.github.com/rupee/rupee.user.js">http://axemclion.github.com/rupee/rupee.user.js</a>
+                            </code>
+                            to replace all occurances of 
+                        </p>
+                    </li>
+                </ol>
+                <div style ="text-align : center;">
+                    <a target = "_blank" href = "http://blog.nparashuram.com/search/labels/rupeesymbol">More Details</a>&nbsp;|&nbsp;<a href= "http://axemclion.github.com/contact.html">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
